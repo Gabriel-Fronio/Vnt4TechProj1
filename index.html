@@ -32,18 +32,62 @@
                 Nova vaga
             </button>
             <br>
-            <div class="collapse" id="collapseVaga">
-                <form>
-                    <div class="form-group">    
-                        <label>Nome</label>
-                        <input type="text" class="form-control" id="nome">
-                        <label>
+            
+            <div class="collapse ml-3 mr-3 mt-3" id="collapseVaga">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">    
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="form-group">
+                                <label>Descrição</label>
+                                <textarea class="form-control" id="descricao"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Habilidades necessárias</label>
+                                        <textarea class="form-control" id="habilidades"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Diferenciais</label>
+                                        <textarea class="form-control" id="diferenciais"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>Salário base</label>
+                                        <input type="text" class="form-control" id="salario">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                        <div class="form-group">
+                                            <label>Área</label>
+                                            <select class="form-control" id="area">
+                                                <option>Desenvolvimento</option>
+                                                <option>Testes</option>
+                                                <option>Outra area</option>
+                                            </select>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="pcd">
+                                <label class="form check-label" for="pcd">Vaga para PCD</label>
+                            </div>
+                            <div class="float-right">
+                                <button type="submit" class="btn btn-success">Criar Vaga</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label>Descrição</label>
-                        <textarea class="form-control" id="descricao">
-                    </div>
-                </form>
+                </div>
+            
             </div>
             <div class="row ml-1 mr-1">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-3 mb-3">
