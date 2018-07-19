@@ -17,11 +17,11 @@ function addVaga()
                 alert("Preencha o salário base da vaga");
             else
             {
-                var linha = document.getElementById("linha").value;
-                linha += 
+                var linha = document.getElementById("linha");
+                linha.innerHTML += 
                 "<div class='col-12 col-sm-12 col-md-6 col-lg-4 mt-3 mb-3'>"+
                 "<div class='card'>"+
-                    "<img class='card-img-top' src='recursos/developer.png'>"+
+                    "<img class='card-img-top' src='recursos/logo-vjobs.png'>"+
                     "<div class='card-body'>"+
                         "<h5 class='card-title'>"+nome+"</h5>"+
                         "<p>"+
@@ -35,5 +35,6 @@ function addVaga()
                     "</div>"+
                 "</div>"+
             "</div>";
+            let nLinha = document.getElementById("linha").innerHTML;
             }
 }
